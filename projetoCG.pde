@@ -9,7 +9,7 @@ boolean nearH = false;
 void setup(){
   size(800,500);
   background(17,22,69);
-  frameRate(60);
+  frameRate(10);
   
   
 }

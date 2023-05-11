@@ -11,7 +11,7 @@ void display() {
   pushMatrix();
   background(17,22,69);
   translate(width*0.15, height*0.2);
-  rotate(frameCount / -100.0);
+  rotate(frameCount / -10.0);
   starA(0, 0, 30, 70, 5); 
   popMatrix();
 }
