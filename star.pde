@@ -3,14 +3,14 @@ class star{
   
   
 
-void draw() {
+void display() {
 
   
   
-  fill(100,200,0);
+  fill(255,255,0);
   pushMatrix();
   background(17,22,69);
-  translate(width*0.8, height*0.5);
+  translate(width*0.15, height*0.2);
   rotate(frameCount / -100.0);
   starA(0, 0, 30, 70, 5); 
   popMatrix();

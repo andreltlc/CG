@@ -6,7 +6,7 @@ class jr {
   void display(){
   strokeCap(ROUND);
   fill(100,150,200);
-  rect(this.positionX,400,50,70,100,100,0,0);
+  rect(this.positionX,400,50,70,100,100,100,100);
   
   strokeWeight(2);
   fill(150,100,100);
