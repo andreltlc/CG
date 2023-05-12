@@ -1,5 +1,6 @@
 class jr {
   int positionX;
+  int velX;
   jr(int positionX){
   this.positionX = positionX;
   }
@@ -25,7 +26,19 @@ class jr {
   stroke(0,0,0);
   line(this.positionX+40,450, this.positionX+50,490);
   }
-  void setPositionX(int x){
-   this.positionX = x; 
+  
+  void update() {
+    positionX += velX;
+  }
+
+  void moveLeft() {
+    velX = -5;
+  }
+
+  void moveRight() {
+    velX = 5;
+  }
+  void stop() {
+    velX = 0;
   }
 }

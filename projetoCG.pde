@@ -9,7 +9,7 @@ boolean nearH = false;
 void setup(){
   size(800,500);
   background(17,22,69);
-  frameRate(10);
+  //frameRate(120);
   
   
 }
@@ -20,22 +20,8 @@ void draw(){
   m.display();
   
   j.display();
-  if(y <= 300 && nearH == false){
-     y+=10;
-     j.setPositionX(y);
-     if(y ==300){
-      nearH = true; 
-     }
-  }
-   else{
-   
-     y-=10;
-     j.setPositionX(y);
-     if(y == 0){
-     nearH = false;
-     }
-   
-   }
+  j.update();
+     
   if(y > 250){
     h.setTamX(x);
   }
@@ -45,4 +31,18 @@ void draw(){
   
  
  
+}
+
+void keyPressed() {
+  if (keyCode == LEFT) {
+    j.moveLeft();
+  } else if (keyCode == RIGHT) {
+    j.moveRight();
+  }
+}
+
+void keyReleased() {
+  if (keyCode == LEFT || keyCode == RIGHT) {
+    j.stop(); 
+  }
 }
