@@ -41,4 +41,7 @@ class jr {
   void stop() {
     velX = 0;
   }
+  int getPosition(){
+  return this.positionX;
+  }
 }

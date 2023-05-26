@@ -3,6 +3,7 @@ grass g = new grass();
 moon m = new moon();
 star s = new star();
 jr j = new jr(400);
+Eye e = new Eye(j.getPosition(),375,15);
 int x = 50;
 int y = 0;
 boolean nearH = false;
@@ -19,8 +20,12 @@ void draw(){
   h.display();
   m.display();
   
+ 
+  
   j.display();
   j.update();
+  e.display();
+   e.update(mouseX, mouseY);
      
   if(y > 250){
     h.setTamX(x);
