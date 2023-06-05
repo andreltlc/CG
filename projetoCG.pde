@@ -44,10 +44,24 @@ void keyPressed() {
   } else if (keyCode == RIGHT) {
     j.moveRight();
   }
+  if (keyCode == 'g' || keyCode == 'G') {
+    s.startRotation();
+    }
+    
+  
+  
+  
 }
 
 void keyReleased() {
   if (keyCode == LEFT || keyCode == RIGHT) {
     j.stop(); 
+  }
+  if (keyCode == 'g' || keyCode == 'G') {
+    s.startRotation();
+  }
+  
+  if (keyCode == 'p' || keyCode == 'P') {
+    s.stopRotation();
   }
 }
