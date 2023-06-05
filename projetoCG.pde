@@ -27,7 +27,7 @@ void draw(){
   e.display();
    e.update(mouseX, mouseY);
      
-  if(y > 250){
+  if(j.getPosition() > 250){
     h.setTamX(x);
   }
   else{
@@ -57,10 +57,6 @@ void keyReleased() {
   if (keyCode == LEFT || keyCode == RIGHT) {
     j.stop(); 
   }
-  if (keyCode == 'g' || keyCode == 'G') {
-    s.startRotation();
-  }
-  
   if (keyCode == 'p' || keyCode == 'P') {
     s.stopRotation();
   }
