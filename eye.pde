@@ -4,13 +4,14 @@ class Eye {
   float angle = 0.0;
   
   Eye(int tx, int ty, int ts) {
-    x = tx;
+    this.x = tx;
     y = ty;
     size = ts;
  }
 
-  void update(int mx, int my) {
+  void update(int mx, int my, int pX) {
     angle = atan2(my-y, mx-x);
+    this.x = pX;
   }
   
   void display() {

@@ -28,7 +28,7 @@ class jr {
   }
   
   void update() {
-    positionX += velX;
+    this.positionX += velX;
   }
 
   void moveLeft() {
