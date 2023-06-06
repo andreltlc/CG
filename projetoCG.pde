@@ -9,28 +9,37 @@ Eye eD = new Eye(jP + 40,375,15);
 int x = 50;
 int y = 0;
 boolean nearH = false;
+rainbown r = new rainbown();
+objectDDD o = new objectDDD();
 void setup(){
-  size(800,500);
+  size(800,500,P3D);
   background(17,22,69);
   //frameRate(120);
   
   
 }
 void draw(){
+  
   s.display();
+  
   g.display();
+  
+  r.draw();
   h.display();
   m.display();
+  
+  
   
  
   
   j.display();
   j.update();
+  
   eE.display();
   eE.update(mouseX, mouseY,j.getPosition()+20);
   eD.display();
   eD.update(mouseX, mouseY,j.getPosition()+40);
-     
+     o.draw();
   if(j.getPosition() > 250){
     h.setTamX(x);
   }
